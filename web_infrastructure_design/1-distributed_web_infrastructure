@@ -1,1 +1,19 @@
 https://i.imgur.com/MVnJS41.png
+
+# Notes
+* Load Balancer:
+Component used in computer systems to distribute network traffic among multiple servers or devices. This helps improve system availability and responsiveness since the load balancer evenly distributes the workload. It can be setup in active-active or active-passive mode, depending on the owner's choice. 
+- Active-active configuration - Multiple load balancers working simultaneously and sharing the workload. All load balancers are active and distribute incoming traffic among the servers or devices behind them.
+In this configuration, each load balancer handles a portion of the traffic and coordinates with the other load balancers to ensure balanced distribution. This increases the overall processing capacity of the system and provides greater redundancy. If one load balancer fails, the others can still handle the traffic without significant disruptions.
+- Active-pasive configuration - There is a primary (active) load balancer and one or more secondary (passive) load balancers. The primary load balancer handles all incoming traffic while the secondary load balancers are on standby to take over if the primary one fails.
+When the primary load balancer is functioning properly, it is the one responsible for distributing the traffic among the servers or devices behind it. However, if the primary load balancer fails, one of the secondary load balancers automatically becomes active to assume its role. This ensures service continuity and avoids traffic disruption.
+
+* MySQL Master vs Replica:
+In a MySQL Master-Replica cluster, replication is used to keep the data synchronized between the master database and the replica databases.
+- Master Database: The master database is the primary database that receives write operations (inserts, updates, deletes) from applications. It contains the authoritative copy of the data.
+- Replica Databases: The replica databases are secondary databases that replicate the data from the master database. They are read-only and used for scaling read operations or providing high availability.
+- Data Synchronization: The master continuously writes new data and updates itself. The replicas periodically connect to the master, reads, and apply the changes to their databases. This process keeps the replica databases synchronized with the master.
+- High Availability: In case the master database fails, one of the replicas can be promoted to become the new master. This ensures that the cluster remains operational, and applications can continue to write and read data.
+
+* Encryptation:
+As traffic is unencrypted, all the data being treated there can potentially be intercepted and accessed by unauthorized parts.
