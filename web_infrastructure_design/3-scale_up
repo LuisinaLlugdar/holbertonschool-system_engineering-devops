@@ -1,0 +1,5 @@
+https://i.imgur.com/LjsrORj.png
+
+# Notes:
+* Load balancer configuration:
+The load balancer is configured as a cluster to provide redundancy and failover capabilities. This configuration ensures that if one load balancer fails, another one within the cluster takes over its responsibilities to maintain the availability of the service. In a load balancer cluster, multiple load balancer instances are grouped together to operate as a single logical unit. These instances typically communicate with each other to share information about the status of the cluster and the servers they are load balancing. If a load balancer instance within the cluster fails or becomes unresponsive, the other instances detect this failure through periodic health checks or by monitoring communication with the failed instance. Once a failure is detected, the remaining load balancer instances reconfigure themselves to distribute the traffic among the available instances.
