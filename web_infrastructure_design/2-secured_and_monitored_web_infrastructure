@@ -1,0 +1,7 @@
+https://i.imgur.com/1997gcS.png
+
+# Notes:
+* Monitoring setup components:
+In a typical monitoring setup, there is a client component responsible for collecting data from various sources, and it sends that data to a monitoring system for analysis and visualization. The client can be a software agent, an embedded device, or any other mechanism capable of gathering the required data.
+- The client's role is to gather relevant information about the system or application being monitored. This data can include metrics such as CPU usage, memory usage, network traffic, response times, error rates, or any other performance-related indicators. The client may also collect log files, event data, or other relevant information depending on the specific monitoring requirements.
+- Once the client has collected the data, it transmits it to the monitoring system. The monitoring system is responsible for receiving, storing, processing, and analyzing the data. It may have various components such as databases, processing engines, alerting mechanisms, and visualization tools. The monitoring system processes the incoming data, applies analytics or algorithms to detect patterns, anomalies, or issues, and presents the information in a meaningful way to the users or administrators.
